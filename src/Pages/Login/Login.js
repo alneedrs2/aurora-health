@@ -57,11 +57,8 @@ const Login = () => {
             required
           />
         </Form.Group>
-        <Form.Group className="m-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
         <p className="m-3">
-          New to this site?{" "}
+          New to Aurora Health?{" "}
           <Link
             to="/register"
             className="text-success text-decoration-none"

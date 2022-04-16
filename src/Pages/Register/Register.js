@@ -16,7 +16,7 @@ const Register = () => {
   };
 
   if (user) {
-      navigate('/')
+    navigate("/");
   }
 
   const handleRegister = (event) => {
@@ -24,8 +24,8 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-    
-    createUserWithEmailAndPassword(name, email , password)
+
+    createUserWithEmailAndPassword(email, password);
   };
   return (
     <div className="mt-3 container w-50 mx-auto">
@@ -37,6 +37,7 @@ const Register = () => {
             type="text"
             name="name"
             aria-describedby="basic-addon1"
+            required
           />
         </InputGroup>
         <InputGroup className="mb-3">
@@ -54,6 +55,7 @@ const Register = () => {
             type="password"
             name="password"
             aria-describedby="basic-addon1"
+            required
           />
         </InputGroup>
         <p className="mb-3">
@@ -66,11 +68,7 @@ const Register = () => {
             Login
           </Link>
         </p>
-        <input
-          className="register-btn"
-          type="submit"
-          value="Register"
-        />
+        <input className="register-btn" type="submit" value="Register" />
       </Form>
     </div>
   );
