@@ -1,0 +1,14 @@
+.carou-title{
+    font-size: 36px;
+    color: rgb(12, 179, 48);
+    font-family: cursive;
+}
+.carou-para{
+    color: rgb(29, 23, 23);
+   font-family: cursive;
+}
+.carou-btn{
+    background-color: rgba(74, 134, 106, 0.356);
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}

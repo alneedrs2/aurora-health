@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Salena Gomez",
+    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
+    "ratings": "5 Stars"
+  },
+  {
+    "id": "2",
+    "name": "Hayat Mahmud",
+    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
+    "ratings": "5 Stars"
+  },
+  {
+    "id": "3",
+    "name": "Ramanujan Shrivastav",
+    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
+    "ratings": "5 Stars"
+  }
+]
