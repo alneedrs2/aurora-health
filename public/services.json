@@ -1,20 +1,26 @@
 [
   {
     "id": "1",
-    "name": "Salena Gomez",
-    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
-    "ratings": "5 Stars"
+    "name": "PLATINUM SESSION",
+    "expire" : "Per Day",
+    "description": "2 hours of Dedicated Training Support, Diet Recommendations, Free Access to the VIP Center.",
+    "price": "49.99",
+    "img": "https://ibb.co/jbtjgt7"
   },
   {
     "id": "2",
-    "name": "Hayat Mahmud",
-    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
-    "ratings": "5 Stars"
+    "name": "GOLD SESSION",
+    "expire" : "12 Sessions",
+    "description": "No Expiry Date for the 12-visit Membership, Diet Recommendations and Control, Free Access to the VIP Center.",
+    "price": "99.99",
+    "img": "https://ibb.co/7ns7Pxk"
   },
   {
     "id": "3",
-    "name": "Ramanujan Shrivastav",
-    "reviewText": "WOW! Impressed with the faster product delivery. Nothing to say about the site. Glamourous is the best.",
-    "ratings": "5 Stars"
+    "name": "DIAMOND SESSION",
+    "expire" : "Month",
+    "description": "1 Month of Dedicated Trainings, 24/7 in Touch on the Phone, Free Access to the VIP Center.",
+    "price": "119.99",
+    "img": "https://ibb.co/k4z1w8Q"
   }
 ]
