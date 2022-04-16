@@ -2,25 +2,25 @@
   {
     "id": "1",
     "name": "PLATINUM SESSION",
-    "expire" : "Per Day",
+    "expire": "Per Day",
     "description": "2 hours of Dedicated Training Support, Diet Recommendations, Free Access to the VIP Center.",
     "price": "49.99",
-    "img": "https://ibb.co/jbtjgt7"
+    "img": "https://bajajfinservhealth.azureedge.net/png/test/445d7504-a97a-484c-ac98-97b66d232e9d.webp"
   },
   {
     "id": "2",
     "name": "GOLD SESSION",
-    "expire" : "12 Sessions",
+    "expire": "12 Sessions",
     "description": "No Expiry Date for the 12-visit Membership, Diet Recommendations and Control, Free Access to the VIP Center.",
     "price": "99.99",
-    "img": "https://ibb.co/7ns7Pxk"
+    "img": "https://www.residencestyle.com/wp-content/uploads/2020/03/Home-Doctor-Consultation.jpg"
   },
   {
     "id": "3",
     "name": "DIAMOND SESSION",
-    "expire" : "Month",
+    "expire": "Month",
     "description": "1 Month of Dedicated Trainings, 24/7 in Touch on the Phone, Free Access to the VIP Center.",
     "price": "119.99",
-    "img": "https://ibb.co/k4z1w8Q"
+    "img": "https://image1.masterfile.com/getImage/NjEwOC0wNjkwNzgwN2VuLjAwMDAwMDAw=AJbnL6/6108-06907807en_Masterfile.jpg"
   }
 ]

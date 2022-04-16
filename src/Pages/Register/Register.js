@@ -25,7 +25,7 @@ const Register = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
     
-    createUserWithEmailAndPassword(email , password)
+    createUserWithEmailAndPassword(name, email , password)
   };
   return (
     <div className="mt-3 container w-50 mx-auto">
@@ -67,7 +67,7 @@ const Register = () => {
           </Link>
         </p>
         <input
-          className="bg-success p-1 register-btn"
+          className="register-btn"
           type="submit"
           value="Register"
         />

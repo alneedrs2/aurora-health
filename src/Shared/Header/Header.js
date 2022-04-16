@@ -4,7 +4,6 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
-import logo from "../../images/logo.jpg";
 import "./Header.css"
 
 const Header = () => {
@@ -17,13 +16,7 @@ const Header = () => {
     <Navbar className="nav-background" variant="light" sticky="top" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            width="200"
-            height="100"
-            className="d-inline-block align-top"
-            alt="Aurora Health"
-          />
+          <h2 className="nav-brand">Aurora Health</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

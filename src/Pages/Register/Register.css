@@ -1,4 +1,6 @@
-.register-btn{
-    border: 1px solid lightgreen;
-    border-radius: 5px;
+.register-btn {
+  background-color: rgba(52, 173, 52, 0.932);
+  padding: 5px;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
 }

@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import "./Login.css";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -69,9 +70,9 @@ const Login = () => {
             Please Register
           </Link>
         </p>
-        <Button className="ms-3" variant="primary" type="submit">
+        <button className="login-btn ms-3" type="submit">
           Submit
-        </Button>
+        </button>
       </Form>
     </div>
   );

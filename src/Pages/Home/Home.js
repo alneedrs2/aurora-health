@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import banner1 from "../../images/banner/banner-1.jpg";
 import banner2 from "../../images/banner/banner-2.jpg";
+import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <Services></Services>
     </div>
   );
 };

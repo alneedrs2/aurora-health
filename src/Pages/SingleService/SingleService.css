@@ -1,0 +1,10 @@
+.price-expire{
+    color: rgb(12, 179, 48);
+    font-family: cursive;
+}
+.service-btn{
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(12, 179, 48, 0.493);
+}
