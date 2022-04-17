@@ -31,6 +31,9 @@ const Header = () => {
             <Nav.Link href="home#services" active>
               Services
             </Nav.Link>
+            <Nav.Link href="home#certificates" active>
+              Certificate
+            </Nav.Link>
             <Nav.Link as={Link} to="/blogs" active>
               Blogs
             </Nav.Link>
