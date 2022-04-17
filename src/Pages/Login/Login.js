@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Login.css";
+import SocialLogin from "./SocialLogin/SocialLogin";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -70,6 +71,7 @@ const Login = () => {
         <button className="login-btn ms-3" type="submit">
           Submit
         </button>
+        <SocialLogin></SocialLogin>
       </Form>
     </div>
   );
