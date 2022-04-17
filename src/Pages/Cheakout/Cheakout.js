@@ -1,11 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 
 const Cheakout = () => {
-    const {id} = useParams()
+    
   return (
-    <div>
-      <h2>Please cheakout your booking.{id}</h2>
+    <div className="text-center mt-3">
+      <h2>Your booking is successful!</h2>
+      <h4>Thank You.</h4>
     </div>
   );
 };

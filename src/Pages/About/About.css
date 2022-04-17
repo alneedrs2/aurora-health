@@ -1,0 +1,15 @@
+.about-me{
+    background-color: rgba(144, 238, 144, 0.322);
+}
+.shuvro-img{
+    border: 1px solid lightgreen;
+    border-radius: 20px;
+}
+.about-title{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color: green;
+}
+.about-paragraph{
+    font-family: 'Times New Roman', Times, serif;
+}

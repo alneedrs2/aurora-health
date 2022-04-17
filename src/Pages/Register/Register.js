@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Form, FormControl, InputGroup } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
 import("./Register.css");
@@ -9,8 +12,8 @@ import("./Register.css");
 const Register = () => {
   const [agree, setAgree] = useState(false);
   const [createUserWithEmailAndPassword, user, loading] =
-    useCreateUserWithEmailAndPassword(auth);
-    const [updateProfile, updating] = useUpdateProfile(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  const [updateProfile, updating] = useUpdateProfile(auth);
 
   const navigate = useNavigate();
 
@@ -18,9 +21,9 @@ const Register = () => {
     navigate("/login");
   };
 
-  if(loading || updating){
-    return <Loading></Loading>
-}
+  if (loading || updating) {
+    return <Loading></Loading>;
+  }
 
   if (user) {
     navigate("/");
@@ -35,8 +38,8 @@ const Register = () => {
 
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
-    navigate('/home');
-}
+    navigate("/home");
+  };
   return (
     <div className="mt-3 container w-50 mx-auto">
       <h2 className="mb-3 text-success">Register Now</h2>
@@ -68,14 +71,23 @@ const Register = () => {
             required
           />
         </InputGroup>
-        <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                {/* <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Terms and Conditions</label> */}
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Aurora Health Terms and Conditions</label><br />
-                <input
-                    disabled={!agree}
-                    className='w-50 mx-auto btn btn-success mt-2'
-                    type="submit"
-                    value="Register" />
+        <input
+          onClick={() => setAgree(!agree)}
+          type="checkbox"
+          name="terms"
+          id="terms"
+        />
+        {/* <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Terms and Conditions</label> */}
+        <label className={`ps-2 ${agree ? "" : "text-danger"}`} htmlFor="terms">
+          Accept Aurora Health Terms and Conditions
+        </label>
+        <br />
+        <input
+          disabled={!agree}
+          className="w-50 mx-auto btn btn-success mt-2"
+          type="submit"
+          value="Register"
+        />
         <p className="mb-3">
           Already Registered?{" "}
           <Link

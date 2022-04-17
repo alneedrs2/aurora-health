@@ -4,10 +4,11 @@ import { Link, useParams } from "react-router-dom";
 const ServiceDetail = () => {
   const {serviceId} = useParams();
   return (
-    <div>
-      <h2>ALL DETAILS : {serviceId}</h2>
+    <div className="text-center">
+      <h2>Service Number : {serviceId}</h2>
+      <h4>Do you want to book this service?</h4>
       <Link to='/cheakout'>
-          <button className="btn btn-success">Proceed Booking</button>
+          <button className="btn btn-success">Confirm Booking</button>
       </Link>
     </div>
   );

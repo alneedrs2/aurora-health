@@ -6,3 +6,18 @@
 .nav-background {
   background-color: rgba(250, 240, 240, 0.473);
 }
+.link {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  transition: color ease-in-out 300ms;
+  color: #1b4388;
+}
+
+.active-link {
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color ease-in-out 300ms;
+  color: #bb0c0c;
+}
